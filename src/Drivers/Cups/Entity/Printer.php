@@ -29,6 +29,11 @@ class Printer implements Arrayable, JsonSerializable, PrinterContracts
         return $this->printer;
     }
 
+    public function jobManager(): JobManager
+    {
+        return $this->jobManager;
+    }
+
     public function capabilities(): array
     {
         if (! isset($this->capabilities)) {
